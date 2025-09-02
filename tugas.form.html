@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Siswa Baru</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('sasuke.png') no-repeat center center fixed; /* Ganti sesuai nama file */
+            background-size: cover;
+            color:cyan;
+        }
+
+        .form-container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.7); /* transparan gelap */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color:cyan;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="file"] {
+            margin-top: 10px;
+        }
+
+        button,
+        input[type="submit"],
+        input[type="reset"] {
+            margin-top: 15px;
+            padding: 10px;
+            width: 48%;
+            border: none;
+            border-radius: 5px;
+            background-color:white;
+            color: black;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color:cyan;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Formulir Pendaftaran Siswa Baru</h2>
+    <form>
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama">
+
+        <label>NISN/NIS:</label>
+        <input type="number" name="nisn">
+
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="gender" value="Laki-laki">Laki-laki
+        <input type="radio" name="gender" value="Perempuan">Perempuan
+
+        <label>Tempat Tanggal Lahir:</label>
+        <input type="date" name="ttl">
+
+        <label>Alamat:</label>
+        <textarea name="alamat"></textarea>
+
+        <label>Nomor Telepon:</label>
+        <input type="number" name="telepon">
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <label>Jurusan Yang Dipilih:</label>
+        <select name="jurusan">
+            <option value=>--Pilih Jurusan--</option>
+            <option value="rpl">RPL</option>
+            <option value="tkj">TKJ</option>
+            <option value="dpib">DPIB</option>
+            <option value="tkp">TKP</option>
+            <option value="geo">GEO</option>
+            <option value="tbsm">TBSM</option>
+            <option value="tkr">TKR</option>
+            <option value="yamaha">YAMAHA</option>
+            <option value="las">LAS</option>
+            <option value="tei">TEI</option>
+            <option value="tav">TAV</option>
+            <option value="titl">TITL</option>
+            <option value="mesin">MESIN</option>
+        </select>
+
+        <label>Upload Foto:</label>
+        <input type="file" name="foto">
+
+        <br>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+
+</body>
+</html>
